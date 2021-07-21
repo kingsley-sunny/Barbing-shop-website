@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="lg:text-lg">
+
+     <!-- FOR THE NAV BAR    -->
+
+    <nav class="w-full bg-gradient-to-b from-gray-600 to-gray-900 text-white flex justify-between items-center py-2 px-8 lg:px-12 xl:px-32 overflow-visible">
+
+        <!-- FOR LOGO -->
+
+        <div class="w-">
+            <img class="h-16 rounded-full inline-block" src="img/1626624379660.png" alt="">
+            <span class="text-white text-2xl inline-block select-none">BARBER SHOP</span>
+        </div>
+
+        <!-- FOR NAV-ITEM ONLY FOR LARGE SCREEN  -->
+
+        <div class="text-white hidden lg:block">
+            <a href="" class="inline-block mr-8">Home</a>
+            <a href="" class="inline-block mr-8">Services</a>
+            <a href="" class="inline-block mr-8">About</a>
+            <a href="" class="inline-block mr-8">Blog</a>
+
+            <!-- THE DROPDOWN MENU FOR THE CONTACT BUTTON -->
+            
+            <div class="group inline z-10">
+                <a href="" class="inline-block lg:relative hover:text-red-400 " id="dropdownMain">
+                    Contact
+                    <div class="bg-gray-700 justify-evenly lg:hidden lg:absolute top-12 right-48 xl:right-72 text-justify lg group-hover:flex flex-col z-10"  id="dropdown">
+                        <a class="text-left border-b border-white block py-3 px-2 hover:text-red-500">Contact Us</a>
+                        <a class="text-left border-b border-white block py-3 px-2">Contact Developer</a>
+                    </div>
+                <a>
+            </div>
+
+            <!-- THE MAKE APPOINTMENT BUTTON -->
+
+            <button class="rounded-lg py-3 px-4 bg-blue-500 ml-8 hover:bg-blue-600 sm:inline-block"><a href="">MAKE APPOINTMENT</a></button>
+        </div>
+
+        <!-- THE APPOINTMENT BUTTON FOR TABLETS -->
+
+        <button class="rounded-lg py-3 px-4 bg-blue-500 ml-8 hover:bg-blue-600 hidden sm:inline-block lg:hidden"><a href="">MAKE APPOINTMENT</a></button>
+
+        <!-- MENU-BAR FOR MOBILE AND ALSO SVG -->
+
+        <div class="lg:hidden" id="burger">
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+              </svg>
+
+        </div>
+
+
+    </nav>
+
+    <!-- THE NAV BAR FOR THE MENU -->
+
+    <nav class="shadow-md w-full hidden z-10" id="menu">
+        <a href="" class="block py-3 px-4 w-full bg-gray-300 border hover:bg-gray-400 active:bg-gray-600">Home</a>
+        <a href="" class="block py-3 px-4 w-full bg-gray-300 border hover:bg-gray-400 active:bg-gray-600">Services</a>
+        <a href="" class="block py-3 px-4 w-full bg-gray-300 border hover:bg-gray-400 active:bg-gray-600">About</a>
+        <a href="" class="block py-3 px-4 w-full bg-gray-300 border hover:bg-gray-400 active:bg-gray-600">Blog</a>
+        <a href="" class="block py-3 px-4 w-full bg-gray-300 border hover:bg-gray-400 active:bg-gray-600">Contact</a>
+        <a href="" class="block py-3 px-2 w-full bg-blue-300 border hover:bg-blue-400 active:bg-blue-600 sm:hidden">MAKE AN APPOINTMENT</a>
+    </nav>
+
+
+
+
+      <!-- SECOND SECTION -->
+
+    <section class="py-24 px-16 lg:px-32 lg:py-32 lg:grid grid-cols-2 relative" id="section">
+
+        <div >
+            <span class="text-gray-200 block">Lorem ipsum dolor sit amet, </span>
+
+            <span class="text-5xl text-gray-300 xl:text-6xl block mt-2 sm:mt-4 lg:mt-3 lg:text-5xl font-serif">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione.
+            </span>
+
+            <span class="text-sm text-gray-400 mt-3 sm:mt-4 block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facilis.
+            </span>
+
+            <button class="text-gray-200 rounded-lg py-4 px-4 bg-blue-500 hover:bg-blue-600 sm:inline-block sm:mt-8 mt-4 lg:mt-3"><a href="">MAKE APPOINTMENT</a></button>
+        </div>
+
+        <div>
+            <img class="absolute top-20 right-40" src="" alt="">
+            <img class="absolute top-20 right-40" src="" alt="">
+            <img class="absolute top-20 right-40" src="" alt="">
+        </div>
+
+    </section>
+
+
+
+    <!-- 3RD SECTION -->
+
+    <section class="py-16 px-16 lg:px-16 xl:px-32 lg:py-16 xl:py-16 lg:grid grid-cols-2 lg:gap-12 border shadow-2xl bg-gradient-to-bl from-gray-50 to-gray-100">
+
+        <div class="flex flex-col justify-center items-center xl:px-16">
+
+            <span class=" text-md text-center block font-serif text-gray-700">Introducing</span>
+            <span class="text-5xl font-serif block text-center text-gray-600 font-medium mt-4">The Barber Shop Since 2010</span>
+            <img class="h-96 text-center -mt-12" src="img/logo.png" alt="">
+            <span class="text-gray-600 -mt-9 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odit enim, eaque quod excepturi consequuntur quis esse autem soluta libero.</span>
+            <button class="rounded-lg py-3 px-4 bg-blue-400 text-gray-200 hover:bg-blue-600 mt-6 shadow-lg">MORE ABOUT US</button>
+
+        </div>
+
+
+        <div class="hidden lg:block relative">
+
+            <img class="lg:h-72 lg:right-4 lg:top-24 xl:h-96 z-10 absolute xl:right-4 xl:top-24 rounded-lg shadow-2xl" src="img/images (1).jpeg" alt="">
+            <img src="img/images (2).jpeg" alt="" class="h-72 top-0 lg:right-48 lg:top-10 xl:h-96 absolute xl:top-10 rounded-lg shadow-2xl">
+            <img src="img/barb.jpeg" alt="" class="lg:h-72 lg:right-16 lg:top-40 h-72 xl:h-96 z-20 absolute xl:right-40 xl:top-64 rounded-lg shadow-2xl">
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- SECTION 4 SERVICES SECTION -->
+
+    <section class=" bg-gradient-to-bl from-gray-600 to-gray-300 pt-20 pb-2 border shadow-2xl">
+
+        <div class="-mb-4">
+            <span class="text-center block font-serif text-gray-200">Barber Shop</span>
+            <span class="text-center block font-serif text-gray-100 text-4xl">Our Services</span>
+        <div class="w-full text-center -mt-2">
+        <span class="inline-block text-gray-100 ">
+            ------------- <img src="img/2023997.svg" alt="" class="w-12 inline-block"> -------------
+        </span>
+    </div>
+</div>
+
+        <div class="block md:flex md:justify-center md:items-center">
+
+        <section class="flex flex-col items-center justify-center py-16 px-16 sm:px-28 gap-8 md:grid md:grid-cols-2 md:px-16 lg:flex lg:flex-row lg:items-center lg:justify-between xl:px-36" id="">
+
+
+            <div class=" py-8 px-8 flex flex-col flex-grow justify-around items-center gap-6 bg-gray-100 border-t-8 border-gray-800 shadow-lg" >
+                <img src="img/hair-clipper-svgrepo-com.svg" alt="" class="w-20 h-20">
+                <span class="text-3xl font-serif text-gray-700">Hair Styles</span>
+                <span class="text-gray-600 text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, aliquam ullam. Deserunt facere assumenda id!
+                </span>
+            </div>
+
+
+            <div class=" py-8 px-8 flex flex-col flex-grow justify-around items-center gap-6 bg-gray-100 border-t-8 border-gray-800 shadow-lg" >
+                <img src="img/hair-clipper-svgrepo-com.svg" alt="" class="w-20 h-20">
+                <span class="text-3xl font-serif text-gray-700">Hair Styles</span>
+                <span class="text-gray-600 text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, aliquam ullam. Deserunt facere assumenda id!
+                </span>
+            </div>
+
+
+            <div class=" py-8 px-8 flex flex-col flex-grow justify-around items-center gap-6 bg-gray-100 border-t-8 border-gray-800 shadow-lg" >
+                <img src="img/hair-clipper-svgrepo-com.svg" alt="" class="w-20 h-20">
+                <span class="text-3xl font-serif text-gray-700">Hair Styles</span>
+                <span class="text-gray-600 text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, aliquam ullam. Deserunt facere assumenda id!
+                </span>
+            </div>
+
+
+            <div class=" py-8 px-8 flex flex-col flex-grow justify-around items-center gap-6 bg-gray-100 border-t-8 border-gray-800 shadow-lg" >
+                <img src="img/hair-clipper-svgrepo-com.svg" alt="" class="w-20 h-20">
+                <span class="text-3xl font-serif text-gray-700">Hair Styles</span>
+                <span class="text-gray-600 text-center">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, aliquam ullam. Deserunt facere assumenda id!
+                </span>
+            </div>
+
+            
+
+
+
+        </section>
+
+    </div>
+
+    </section>
+
+
+    <!-- THE 5TH SECTION (MEET OUR BARBERS) -->
+
+
+    <section class="px-16 py-12 lg:px-36">
+
+        
+
+        <div class="space-y-4 flex flex-col justify-between items-center sm:grid grid-cols-2 sm:gap-6 sm:space-y-0 md:flex md:flex-row md:justify-between md:items-center">
+            
+            <div class="group max-w-sm text-center shadow-2xl relative overflow-hidden flex-grow" id="">
+                <img src="img/obo.jpg" alt="" class="object-contain">
+
+                <span class="text-white block w-full transform absolute bottom-0 z-10 py-7 bg-gray-700 scale-0 transition-transform duration-500 group-hover:scale-100 mix-blend-normal">
+                    <span class="block font-serif font-bold text-xl">Boss OBO</span>
+                    <span class="text-sm font-thin">Barber and also a Musician</span>
+                </span>
+            </div>
+
+            <div class="group max-w-sm text-center shadow-2xl relative overflow-hidden flex-grow" id="">
+                <img src="img/tony.jpg" alt="" class="object-contain">
+                
+                <span class="text-white block w-full transform absolute bottom-0 z-10 py-7 bg-gray-700 scale-0 transition-transform duration-500 group-hover:scale-100 mix-blend-normal">
+                    <span class="block font-serif font-bold text-xl">Papa Tony</span>
+                    <span class="text-sm font-thin">Barber & Web Designer</span>
+                </span>
+            </div>
+
+            <div class="group max-w-sm text-center shadow-2xl relative overflow-hidden flex-grow" id="">
+                <img src="img/obo.jpg" alt="" class="object-contain">
+                
+                <span class="text-white block w-full transform absolute bottom-0 z-10 py-7 bg-gray-700 scale-0 transition-transform duration-500 group-hover:scale-100 mix-blend-normal">
+                    <span class="block font-serif font-bold text-xl">Boss OBO</span>
+                    <span class="text-sm font-thin">Barber and also a Musician</span>
+                </span>
+            </div>
+
+            <div class="group max-w-sm text-center shadow-2xl relative overflow-hidden flex-grow" id="">
+                <img src="img/obo.jpg" alt="" class="object-contain">
+                
+                <span class="text-white block w-full transform absolute bottom-0 z-10 py-7 bg-gray-700 scale-0 transition-transform duration-500 group-hover:scale-100 mix-blend-normal">
+                    <span class="block font-serif font-bold text-xl">Boss OBO</span>
+                    <span class="text-sm font-thin">Barber and also a Musician</span>
+                </span>
+            </div>
+
+            
+
+            
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- THE 6TH SECTION (THE MAKE AN APPOINTMENT SECTION) -->
+
+
+    <section class="w-full lg:grid lg:grid-cols-2">
+
+        <div class="hidden lg:block" id="mapbro"></div>
+        <div class=" px-12 py-12 sm:px-32 md:px-40 lg:px-16 xl:px-32" id="map">
+            <span class="text-white text-4xl font-serif block">Make An Appointment</span>
+            <span class="text-gray-400 font-xs block mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium tempora minima ratione ipsum, repellat iste.</span>
+
+            <div class="mt-8 ">
+                <form action="" method="POST" class="space-y-6">
+                    <input type="text" name="name" id="" placeholder="Your Name" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full">
+
+                    <input type="email" name="email" id="" placeholder="Your Email" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full">
+
+                    <input type="tel" name="telephone" id="" placeholder="Your Phone No" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full">
+                    
+                    <input type="date" name="freeTime" id="" placeholder="Your Free Time" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full">
+
+                    <div class="">
+                        <label for="time" class="text-gray-300 block">Your Time</label>
+                        <input type="time" name="time" id="" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full mt-2">
+                    </div>
+
+                    <input type="text" name="Services" id="" placeholder="Services" list="services" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full">
+
+                    <datalist id="services">
+
+                        <option value="Hair Styles" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full"></option>
+                        <option value="Hair Styles" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full"></option>
+                        <option value="Hair Styles" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full"></option>
+                        <option value="Hair Styles" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full"></option>
+
+                    </datalist>
+
+                    <input type="text" name="Services" id="" placeholder="Choose Barbers" list="barbers" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full">
+
+                    <datalist id="barbers">
+
+                        <option value=" Micheal Prose" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full"></option>
+                        <option value="Donald Pedro" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full"></option>
+                        <option value="Hair Styles" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full"></option>
+                        <option value="Hair Styles" required class="bg-transparent border-2 border-gray-700 text-gray-200 py-3 px-4 w-full"></option>
+
+                    </datalist>
+
+                    <input type="submit" value="MAKE APPOINTMENT" class="rounded-lg py-3 px-4 bg-blue-500 hover:bg-blue-600 text-gray-200">
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+          
+
+
+    <script src="index.js"></script>
+</body>
+</html>

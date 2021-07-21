@@ -1,0 +1,38 @@
+dropdownMain:hover #dropdown {
+  display: flex;
+   background-color: black;
+   color: blue;
+}
+
+dropdown {
+  display: none;
+}
+
+#section {
+  background-image: url(img/back.jpeg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:rgba(0, 0, 0, 0.808);
+  background-blend-mode: darken;
+}
+
+#map {
+  background-image: url(img/map.jpeg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:rgba(0, 0, 0, 0.808);
+  background-blend-mode: darken;    
+}
+
+#mapbro {
+  background-image: url(img/map2.jpeg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:rgba(0, 0, 0, 0.808);
+}
