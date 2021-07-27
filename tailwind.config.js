@@ -5,8 +5,18 @@ module.exports = {
     extend: {
       spacing: {
         74: '19rem'
+
+      },
+      maxWidth: {
+        'max': '81rem',
+        'maxa': '88rem'
+      },
+      maxHeight: {
+        100: '30rem',
+        105: '35rem'
       }
     },
+    
   },
   variants: {
     extend: {
